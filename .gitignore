@@ -1,6 +1,8 @@
 .*.swp
 # Ignore configuration files that may contain sensitive information.
 sites/*/settings*.php
+sites/*/node_modules
+sites/all/themes/bootstrap
 
 # Ignore paths that contain user-generated content.
 sites/*/files

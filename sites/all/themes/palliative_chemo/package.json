@@ -1,0 +1,14 @@
+{
+  "name" : "palliative_chemo",
+  "version" : "1.0.0",
+  "author" : "Health Communication Core",
+  "homepage" : "http://www.healthcommcore.org",
+  "engines" : {
+    "node" : ">=0.8.0"
+  },
+  "devDependencies" : {
+    "grunt-contrib-compass" : "v1.0.1",
+    "grunt-contrib-sass" : "v0.9.2",
+    "grunt-contrib-watch" : "v0.6.1"
+  }
+}

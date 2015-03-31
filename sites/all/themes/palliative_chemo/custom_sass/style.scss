@@ -1,0 +1,17 @@
+@import 'compass';
+/* Custom overrides */
+
+$pal-chemo-yellow: #F3E7A8;
+
+/*
+*/
+#header {
+  border-top:none;
+  border-bottom: $pal-chemo-yellow 2px solid;
+}
+
+#header .logo {
+  padding: 0;
+}
+
+body {background: #fff;}
