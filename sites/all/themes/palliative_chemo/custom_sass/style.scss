@@ -1,17 +1,57 @@
 @import 'compass';
 /* Custom overrides */
 
+/* COLORS */
 $pal-chemo-yellow: #F3E7A8;
+$pal-chemo-light-blue: #55A2D7;
+$pal-chemo-bkgrd: #D1E7F5;
 
-/*
-*/
+body {
+  font-size: 1.3em;
+  background: $pal-chemo-bkgrd;
+}
+
 #header {
   border-top:none;
   border-bottom: $pal-chemo-yellow 2px solid;
+  background: #fff;
 }
 
 #header .logo {
   padding: 0;
 }
 
-body {background: #fff;}
+#header nav ul.nav-main li.active a,
+#header nav ul.nav-main li a:hover {
+  background: $pal-chemo-light-blue;
+  color: #fff;
+}
+
+#header nav ul.nav-main li a {
+  color: $pal-chemo-light-blue;
+}
+
+#header nav ul.nav-main li a {
+  font-size: 1.4em;
+  padding:15px 20px;
+}
+
+#header > .container {
+  /*margin-bottom: -60px;*/
+}
+
+.main {
+  background: #fff;
+}
+
+
+/* FOOTER */
+#footer, #footer .footer-copyright {
+  background: none;
+  border: none;
+}
+
+#footer {
+  margin-top:0;
+}
+

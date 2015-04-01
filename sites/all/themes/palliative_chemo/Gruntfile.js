@@ -7,7 +7,7 @@ module.exports = function(grunt) {
 				tasks : ['compass']
 			},
 			options : {
-				livereload : true,
+				//livereload : true,
 			},
 		},
 		compass : {
