@@ -4,7 +4,15 @@
 /* COLORS */
 $pal-chemo-yellow: #F3E7A8;
 $pal-chemo-light-blue: #55A2D7;
+$pal-chemo-med-blue: #4C89B5;
+$pal-chemo-dark-blue: #1E4971;
 $pal-chemo-bkgrd: #D1E7F5;
+
+/* EXTENDS */
+
+.no-border {
+  border: none;
+}
 
 body {
   font-size: 1.3em;
@@ -23,32 +31,57 @@ body {
 
 #header nav ul.nav-main li.active a,
 #header nav ul.nav-main li a:hover {
-  background: $pal-chemo-light-blue;
+  background: $pal-chemo-med-blue;
   color: #fff;
 }
 
 #header nav ul.nav-main li a {
-  color: $pal-chemo-light-blue;
+  color: $pal-chemo-med-blue;
 }
 
 #header nav ul.nav-main li a {
   font-size: 1.4em;
   padding:15px 20px;
+  margin: 0 6px;
 }
 
 #header > .container {
-  /*margin-bottom: -60px;*/
+  margin-bottom: -60px;
 }
 
 .main {
   background: #fff;
 }
 
+.page-top, .page-top h1{
+  @extend .no-border;
+}
+
+/*
+*/
+
+h1 {
+  margin: 0;
+  font-size: 4.0em;
+  padding:8px 0;
+}
+
+.page-top {
+  background: $pal-chemo-med-blue;
+}
+
+.page-top h1 {
+  color: #fff;
+}
+
+.banner-space {
+  padding: 30px 0;
+}
 
 /* FOOTER */
 #footer, #footer .footer-copyright {
   background: none;
-  border: none;
+  @extend .no-border;
 }
 
 #footer {

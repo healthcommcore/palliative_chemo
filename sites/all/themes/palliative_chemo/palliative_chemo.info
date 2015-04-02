@@ -16,6 +16,7 @@ regions[header_icons] = Header Icons
 regions[header_menu] = Header Menu
 regions[one_page] = One Page Content
 regions[before_content] = Before Content
+regions[home_modules] = Homepage modules
 regions[content] = Content
 regions[sidebar_left] = Left Sidebar
 regions[sidebar_right] = Right Sidebar
