@@ -19,6 +19,18 @@ body {
   background: $pal-chemo-bkgrd;
 }
 
+.light-blue, 
+.light-blue h1, 
+.light-blue p {
+  color: $pal-chemo-light-blue;
+}
+
+.dark-blue, 
+.dark-blue h1, 
+.dark-blue p {
+  color: $pal-chemo-dark-blue;
+}
+
 #header {
   border-top:none;
   border-bottom: $pal-chemo-yellow 2px solid;
@@ -72,6 +84,41 @@ h1 {
 
 .page-top h1 {
   color: #fff;
+}
+
+/* HOME */
+
+.home-modules {
+  margin: 20px 0;
+}
+
+.hm {
+  text-align: center;
+}
+
+.hm-sm h1 {
+  font-size: 1.5em;
+	font-weight: 400;
+	letter-spacing: 0.03em;
+}
+
+.hm-lg {
+  border: $pal-chemo-yellow 4px solid; 
+	padding: 5% 18% 2%;
+}
+
+.hm-lg h1 {
+  font-size: 2.5em;
+	font-weight: 400;
+}
+
+.hm-lg p {
+  font-size: 1.5em;
+}
+
+
+.hm h1 {
+  text-transform: uppercase;
 }
 
 .banner-space {

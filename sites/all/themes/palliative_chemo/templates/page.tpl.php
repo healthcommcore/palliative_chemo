@@ -104,7 +104,7 @@
 	      <div class="row">
 	      <?php print $messages; ?>
 			    <?php if ( ($page['home_modules']) ) : ?>
-						<div class="home-modules">
+						<div class="home-modules clearfix">
 					    <?php print render($page['home_modules']); ?>
 						</div>
 				  <?php endif; ?>
