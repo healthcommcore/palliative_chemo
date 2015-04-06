@@ -19,6 +19,10 @@ body {
   background: $pal-chemo-bkgrd;
 }
 
+.main {
+  padding-bottom: 40px;
+}
+
 .light-blue, 
 .light-blue h1, 
 .light-blue p {
@@ -89,31 +93,53 @@ h1 {
 /* HOME */
 
 .home-modules {
-  margin: 20px 0;
+  margin: 30px 0 50px;
+}
+
+/*
+.home-modules a {
+  margin: 0 20px;
+}
+*/
+
+.home-modules a:hover {
+  text-decoration: none;
 }
 
 .hm {
   text-align: center;
 }
 
+.hm-sm {
+  padding: 50px 20px 0 20px;
+}
+
 .hm-sm h1 {
   font-size: 1.5em;
-	font-weight: 400;
-	letter-spacing: 0.03em;
+  font-weight: 400;
+  letter-spacing: 0.03em;
+  line-height: 1.6em;
+}
+
+.hm-sm p{
+  font-size: 1.2em;
 }
 
 .hm-lg {
   border: $pal-chemo-yellow 4px solid; 
-	padding: 5% 18% 2%;
+  padding: 5% 18% 2%;
+  margin:0 20px;
 }
 
 .hm-lg h1 {
   font-size: 2.5em;
-	font-weight: 400;
+  font-weight: 400;
+  line-height:1.6em;
 }
 
 .hm-lg p {
   font-size: 1.5em;
+  line-height:1.5em;
 }
 
 
@@ -123,6 +149,16 @@ h1 {
 
 .banner-space {
   padding: 30px 0;
+}
+
+
+/* VIDEOS */
+
+.pal-chemo-video {
+  max-width:900px;
+}
+
+.pal-chemo-vid video{
 }
 
 /* FOOTER */
@@ -135,3 +171,28 @@ h1 {
   margin-top:0;
 }
 
+#footer p, #footer a {
+  color: $pal-chemo-med-blue !important;
+}
+
+#footer .footer-copyright nav ul li {
+  border-left: $pal-chemo-med-blue 1px solid;
+}
+
+#footer a, #footer a:hover {
+  text-decoration: underline;
+}
+
+#footer .footer-copyright {
+  padding: 50px 0 20px 0;
+}
+
+#footer .footer-copyright nav {
+  font-size: 1.4em;
+}
+
+#footer .footer-copyright p {
+  margin-top: 10px;
+  float: right;
+  text-align: right;
+}
