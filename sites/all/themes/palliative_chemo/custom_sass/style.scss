@@ -14,6 +14,8 @@ $pal-chemo-bkgrd: #D1E7F5;
   border: none;
 }
 
+/* COMMON */
+
 body {
   font-size: 1.3em;
   background: $pal-chemo-bkgrd;
@@ -34,6 +36,65 @@ body {
 .dark-blue p {
   color: $pal-chemo-dark-blue;
 }
+
+.region-content p {
+  font-size: 1.7em;
+  line-height: 2.0em;
+}
+
+.btn-space {
+  margin: 30px 20px;
+}
+
+.btn-primary {
+  background: $pal-chemo-med-blue;
+}
+
+.btn-primary:hover {
+  background: $pal-chemo-dark-blue;
+}
+
+.display-table {
+  display: table;
+  position: relative;
+}
+
+.center {
+  margin: 0 auto;
+}
+
+.main {
+  background: #fff;
+}
+
+.page-top, .page-top h1{
+  @extend .no-border;
+}
+
+.page-top {
+  margin-bottom: 50px;
+}
+
+/*
+*/
+
+h1 {
+  margin: 0;
+  font-size: 4.0em;
+  padding:8px 0;
+}
+
+.page-top {
+  background: $pal-chemo-med-blue;
+}
+
+.page-top h1 {
+  color: #fff;
+}
+
+
+
+/* HEADER */
 
 #header {
   border-top:none;
@@ -64,32 +125,6 @@ body {
 #header > .container {
   margin-bottom: -60px;
 }
-
-.main {
-  background: #fff;
-}
-
-.page-top, .page-top h1{
-  @extend .no-border;
-}
-
-/*
-*/
-
-h1 {
-  margin: 0;
-  font-size: 4.0em;
-  padding:8px 0;
-}
-
-.page-top {
-  background: $pal-chemo-med-blue;
-}
-
-.page-top h1 {
-  color: #fff;
-}
-
 /* HOME */
 
 .home-modules {
@@ -151,6 +186,16 @@ h1 {
   padding: 30px 0;
 }
 
+/* BOOKLET */
+
+.view-folfox-booklet img,
+.view-folfiri-booklet img {
+  margin: 30px auto;
+  border: #ccc 1px solid;
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
 
 /* VIDEOS */
 
