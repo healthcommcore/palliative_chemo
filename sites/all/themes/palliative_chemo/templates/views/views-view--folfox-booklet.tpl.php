@@ -90,12 +90,7 @@
 
 	function modifyPager($pager, $pagerButton, $links) {
 		$pattern = '/<li class="' . $pagerButton . '">(.*?)<\/li>/';
-		/*
-		$match = preg_match($pattern, $pager);
-		dpm($match);
-		 */
 		$pager = preg_replace($pattern, '', $pager);
-		dpm($pager);
 		$pager .= $links;
 		return $pager;
 	}
