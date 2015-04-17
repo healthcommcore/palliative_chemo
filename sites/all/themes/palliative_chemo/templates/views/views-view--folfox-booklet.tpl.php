@@ -70,20 +70,42 @@
  * 4-8-15
  */
 	$view = views_get_current_view();
-	$current_page = $view->query->pager->current_page;
+	$currentPage = $view->query->pager->current_page;
 	$path = current_path() . '?page=';
-	$decision_links = '<div class="center display-table">';
-	$decision_links .= '<a class="btn btn-primary btn-lg btn-space" href="/' . $path . ($current_page + 1) . '">Learn about life expectency</a>';
-	$decision_links .= '<a class="btn btn-primary btn-lg btn-space" href="/' . $path . ($current_page + 3) . '">Skip to FAQs</a>';
-	$decision_links .= '</div>';
 	if ($pager) {
-		if ($current_page == 14) {
-			// Get rid of next link and reassign to $pager variable
-			$pattern = '/<li class="pager-next">[\W\w\S\s]*<\/li>/';
-			$pager = preg_replace($pattern, '', $pager);
-			$pager .= $decision_links;
+		switch($currentPage) {
+			case 14:
+				$decisionLinks = getDecisionLinks($path, $currentPage + 1, $currentPage + 3, 'Continue to: Learn about life expectancy', 'Skip to: FAQs');
+				$pager = modifyPager($pager, 'pager-next', $decisionLinks);
+				break;
+				/*
+				 */
+			case 17:
+				$decisionLinks = getDecisionLinks($path, $currentPage - 1, $currentPage - 3, 'Go back to: Learn about life expectancy', 'Skip back to: Making your decision');
+				$pager = modifyPager($pager, 'pager-previous', $decisionLinks);
+				break;
 		}
     print $pager;
+	}
+
+	function modifyPager($pager, $pagerButton, $links) {
+		$pattern = '/<li class="' . $pagerButton . '">(.*?)<\/li>/';
+		/*
+		$match = preg_match($pattern, $pager);
+		dpm($match);
+		 */
+		$pager = preg_replace($pattern, '', $pager);
+		dpm($pager);
+		$pager .= $links;
+		return $pager;
+	}
+
+	function getDecisionLinks($path, $firstLink, $secondLink, $firstLinkText, $secondLinkText) {
+		$links = '<div class="center display-table">';
+		$links .= '<a class="btn btn-primary btn-lg btn-space" href="/' . $path . $firstLink . '">' . $firstLinkText . '</a>';
+		$links .= '<a class="btn btn-primary btn-lg btn-space" href="/' . $path . $secondLink . '">' . $secondLinkText . '</a>';
+		$links .= '</div>';
+		return $links;
 	}
 	?>
 
