@@ -81,7 +81,7 @@
 				/*
 				 */
 			case 17:
-				$decisionLinks = getDecisionLinks($path, $currentPage - 1, $currentPage - 3, 'Go back to: Learn about life expectancy', 'Skip back to: Making your decision');
+				$decisionLinks = getDecisionLinks($path, $currentPage - 2, $currentPage - 3, 'Go back to: Learn about life expectancy', 'Skip back to: Making your decision');
 				$pager = modifyPager($pager, 'pager-previous', $decisionLinks);
 				break;
 		}
