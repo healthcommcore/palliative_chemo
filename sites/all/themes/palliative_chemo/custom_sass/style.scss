@@ -45,8 +45,12 @@ a:hover {
   color: $pal-chemo-dark-blue;
 }
 
-.region-content p {
+.region-content p, 
+.region-content a { 
   font-size: 1.7em;
+}
+
+.region-content p { 
   line-height: 2.0em;
 }
 
@@ -76,7 +80,8 @@ a:hover {
 }
 
 .center {
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .main {
@@ -93,7 +98,7 @@ a:hover {
 
 h1 {
   margin: 0;
-  font-size: 4.0em;
+  font-size: 3.0em;
   padding:8px 0;
   line-height: 1.2em;
 }

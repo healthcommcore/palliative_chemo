@@ -75,15 +75,18 @@
 	if ($pager) {
 		switch($currentPage) {
 			case 14:
-				$decisionLinks = getDecisionLinks($path, $currentPage + 1, $currentPage + 3, 'Continue to: Learn about life expectancy', 'Skip to: FAQs');
+				$decisionLinks = getDecisionLinks($path, $currentPage + 1, $currentPage + 3, 'Read about life expectancy', 'Skip ahead to FAQs');
 				$pager = modifyPager($pager, 'pager-next', $decisionLinks);
 				break;
 				/*
 				 */
 			case 17:
-				$decisionLinks = getDecisionLinks($path, $currentPage - 2, $currentPage - 3, 'Go back to: Learn about life expectancy', 'Skip back to: Making your decision');
-				$pager = modifyPager($pager, 'pager-previous', $decisionLinks);
+				//$decisionLinks = getDecisionLinks($path, $currentPage - 2, $currentPage - 3, 'Go back to: Learn about life expectancy', 'Skip back to: Making your decision');
+				$pager = modifyPager($pager, 'pager-previous', '');
 				break;
+		}
+		if($currentPage !== 0) {
+			$pager .= '<a class="topspace center display-table" href="/folfox/booklet">Go back to the beginning</a>';
 		}
     print $pager;
 	}
