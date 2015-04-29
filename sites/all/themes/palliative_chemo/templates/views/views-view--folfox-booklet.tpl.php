@@ -75,7 +75,7 @@
 	if ($pager) {
 		switch($currentPage) {
 			case 14:
-				$decisionLinks = getDecisionLinks($path, $currentPage + 1, $currentPage + 3, 'Read about life expectancy', 'Skip ahead to FAQs');
+				$decisionLinks = getDecisionLinks($path, $currentPage + 1, $currentPage + 3, 'Option 1: Read about life expectancy', 'Option 2: Skip ahead to FAQs');
 				$pager = modifyPager($pager, 'pager-next', $decisionLinks);
 				break;
 				/*
