@@ -13,6 +13,7 @@ module.exports = function(grunt) {
 		compass : {
 			dist : {
 				options : {
+					sourcemap : true,
 					sassDir : 'custom_sass',
 					cssDir : 'css',
 					imagesPath : 'images',
