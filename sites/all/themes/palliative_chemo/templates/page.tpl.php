@@ -15,8 +15,8 @@
     
       <?php if ($logo): ?>
       <h1 class="logo">
-	      <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" id="logo">
-	        <img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" height="<?php print theme_get_setting('logo_height'); ?>" data-sticky-height="<?php print theme_get_setting('sticky_logo_height'); ?>" />
+	      <a class="col-md-3 col-sm-4 col-xs-6" href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" id="logo">
+	        <img class="img-responsive" src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" height="<?php print theme_get_setting('logo_height'); ?>" data-sticky-height="<?php print theme_get_setting('sticky_logo_height'); ?>" />
 	      </a>
       </h1>
 	    <?php endif; ?>
@@ -62,7 +62,7 @@
       
     </div>
     
-    <div class="navbar-collapse nav-main-collapse collapse">
+    <div class="navbar-collapse nav-main-collapse collapse nav-pull-up">
 		  <div class="container">  
       
         <?php print render($page['header_icons']); ?>

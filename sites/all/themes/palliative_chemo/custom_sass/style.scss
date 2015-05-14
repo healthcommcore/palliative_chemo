@@ -50,8 +50,6 @@ a:hover {
   font-size: 1.7em;
 }
 
-/* This is a test */
-
 .region-content p { 
   line-height: 2.0em;
 }
@@ -127,8 +125,16 @@ h1 {
   background: #fff;
 }
 
+#header .container {
+  /*height: 164px;*/
+}
+
 #header .logo {
   padding: 0;
+}
+
+#header .logo a {
+  /*display:inline-block;*/
 }
 
 #header nav ul.nav-main li.active a,
@@ -148,10 +154,10 @@ h1 {
 }
 
 #header > .container {
-  margin-bottom: -60px;
+  /*margin-bottom: -60px;*/
 }
-/* HOME */
 
+/* HOME */
 .home-modules {
   margin: 30px 0 50px;
 }
@@ -279,3 +285,5 @@ h1 {
   float: right;
   text-align: right;
 }
+
+@import './responsive.scss';
